@@ -1,0 +1,10 @@
+[Unit]
+Description=Socket for NodeJS Systemd Issue
+Requires=nodejs.socket
+After=nodejs.socket network.target
+
+[Serivce]
+ExecStart=/path/to/server.js
+
+[Install]
+WantedBy=default.target
