@@ -1,9 +1,9 @@
 [Unit]
-Description=Socket for NodeJS Systemd Issue
+Description=NodeJS Systemd Issue
 Requires=nodejs.socket
 After=nodejs.socket network.target
 
-[Serivce]
+[Service]
 ExecStart=/path/to/server.js
 
 [Install]
